@@ -259,6 +259,7 @@
     <script src="/assets/mail/contact_me.js"></script>
     <!-- Core theme JS-->
     <script src="/assets/js/scripts.js"></script>
+    <script src="/assets/js/about.js"></script>
 </body>
 
 </html>
