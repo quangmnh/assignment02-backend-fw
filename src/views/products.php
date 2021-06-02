@@ -39,7 +39,7 @@
                     <li class="nav-item"><a class="nav-link " href="/news">News</a></li>
                     <li class="nav-item"><a class="nav-link " href="/contact">Contact</a></li>
                     <li class="nav-item"><a class="nav-link " href="/careers">Careers</a></li>
-                    <form class="form-inline" id="getusers" action="./products.php" method="GET">
+                    <form class="form-inline" id="getusers" action="/products/:path" method="post">
                         <input id="myInput" name ="myInput" class="form-control mr-sm-2" type="search" placeholder="Search Products" aria-label="Search">
                         <button id="MyBtn" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                     </form>
@@ -53,12 +53,6 @@
             <h2 class="section-heading text-uppercase">Products</h2>
         </div>
     </header>
-
-    <div name = "filter-container">
-        <form id="filter" action="./products.php" method="GET">
-            
-        </form>
-    </div>
 
     <div class="container" id ="records"></div> 
 
