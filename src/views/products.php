@@ -39,7 +39,7 @@
                     <li class="nav-item"><a class="nav-link " href="/news">News</a></li>
                     <li class="nav-item"><a class="nav-link " href="/contact">Contact</a></li>
                     <li class="nav-item"><a class="nav-link " href="/careers">Careers</a></li>
-                    <form class="form-inline" id="getusers" action="/products/:path" method="post">
+                    <form class="form-inline" id="getusers" action="/products/search" method="post">
                         <input id="myInput" name ="myInput" class="form-control mr-sm-2" type="search" placeholder="Search Products" aria-label="Search">
                         <button id="MyBtn" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                     </form>
@@ -285,12 +285,12 @@
                             document.getElementById('records').innerHTML +='<div class="product col-12 row">\
                                     <div class="col-5">\
                                         <div class="product__thumbnail">\
-                                            <img src="'+result[i]["limage"]+'" alt="'+result[i]["dname"]+'">\
+                                            <img src="'+result[i]["Image_path"]+'" alt="'+result[i]["product_name"]+'">\
                                         </div>\
                                     </div>\
                                     <div class="product__info col-7">\
-                                        <h3 class="product__name"><a href="./product-details.html">'+result[i]["dname"]+'</a></h3>\
-                                        <div class="product__price-box"><span class="product__price">'+new Intl.NumberFormat().format(result[i]["price"])+' VND</span></div>\
+                                        <h3 class="product__name"><a href="./product-details.html">'+result[i]["product_name"]+'</a></h3>\
+                                        <div class="product__price-box"><span class="product__price">'+new Intl.NumberFormat().format(result[i]["product_price"])+' VND</span></div>\
                                     </div>\
                                 </div>';
                         } 
@@ -299,12 +299,12 @@
                             document.getElementById('records').innerHTML +='<div class="product col-12 row">\
                                     <div class="col-5">\
                                         <div class="product__thumbnail">\
-                                            <img src="'+result[i]["limage"]+'" alt="'+result[i]["dname"]+'">\
+                                            <img src="'+result[i]["Image_path"]+'" alt="'+result[i]["product_name"]+'">\
                                         </div>\
                                     </div>\
                                     <div class="product__info col-7">\
-                                        <h3 class="product__name"><a href="./product-details.html">'+result[i]["dname"]+'</a></h3>\
-                                        <div class="product__price-box"><span class="product__price">'+new Intl.NumberFormat().format(result[i]["price"])+' VND</span></div>\
+                                        <h3 class="product__name"><a href="./product-details.html">'+result[i]["product_name"]+'</a></h3>\
+                                        <div class="product__price-box"><span class="product__price">'+new Intl.NumberFormat().format(result[i]["product_price"])+' VND</span></div>\
                                     </div>\
                                 </div>';
                         } 
@@ -313,12 +313,12 @@
                             document.getElementById('records').innerHTML +='<div class="product col-12 row">\
                                     <div class="col-5">\
                                         <div class="product__thumbnail">\
-                                            <img src="'+result[i]["limage"]+'" alt="'+result[i]["dname"]+'">\
+                                            <img src="'+result[i]["Image_path"]+'" alt="'+result[i]["product_name"]+'">\
                                         </div>\
                                     </div>\
                                     <div class="product__info col-7">\
-                                        <h3 class="product__name"><a href="./product-details.html">'+result[i]["dname"]+'</a></h3>\
-                                        <div class="product__price-box"><span class="product__price">'+new Intl.NumberFormat().format(result[i]["price"])+' VND</span></div>\
+                                        <h3 class="product__name"><a href="./product-details.html">'+result[i]["product_name"]+'</a></h3>\
+                                        <div class="product__price-box"><span class="product__price">'+new Intl.NumberFormat().format(result[i]["product_price"])+' VND</span></div>\
                                     </div>\
                                 </div>';
                         } 
